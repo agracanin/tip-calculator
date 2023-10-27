@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-container">
+      <div class="bill section">
+        <span class="input-title">Bill</span>
+        <input type="text" class="input-field" id="bill-price" />
+      </div>
+
+      <div class="tip section">
+        <span class="input-title">Select Tip %</span>
+        <div class="tip-selectors">
+          <div class="tip-selector" data-tip="5">5%</div>
+          <div class="tip-selector" data-tip="10">10%</div>
+          <div class="tip-selector" data-tip="15">15%</div>
+          <div class="tip-selector" data-tip="25">25%</div>
+          <div class="tip-selector" data-tip="50">50%</div>
+          <div class="tip-selector custom">Custom</div>
+        </div>
+      </div>
+
+      <div class="people section">
+        <span class="input-title">Number of People</span>
+        <input type="text" class="input-field" id="bill-price">
+      </div>
+    </div>
+
+    <div class="display-container">
+      <div class="top-display">
+        <div class="calculation-container">
+          <div class="calculation-titles">
+            <p class="calculation-title">Tip Amount</p>
+            <span class="calculation-subtitle">/ person</span>
+          </div>
+          <h2 class="calculation-text" id="tip-amount">$4.27</h2>
+        </div>
+
+        <div class="calculation-container">
+          <div class="calculation-titles">
+            <p class="calculation-title">Total</p>
+            <span class="calculation-subtitle">/ person</span>
+          </div>
+          <h2 class="calculation-text" id="total-amount">$32.79</h2>
+        </div>
+      </div>
+      <button class="reset-btn" id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--light-grayish-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--white);
+    display: flex;
+    width: 800px;
+    height: 400px;
+    padding: 2em 1.5em;
+    gap: 2em;
+    border-radius: 20px;
+}
+
+.input-container,
+.display-container {
+    flex: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-selectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tip-selector {
+    background-color: var(--very-dark-cyan);
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    padding: 0.5em 0;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.display-container {
+    background-color: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.calculation-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-display {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.reset-btn {
+    width: 260px;
+    align-self: center;
+    padding: 0.5em 0;
+    background-color: var(--strong-cyan);
+    outline: none;
+    border: none;
+    color: var(--very-dark-cyan);
+    font-family: inherit;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.calculation-title {
+    color: var(--white);
+}
+
+.calculation-subtitle {
+    color: var(--dark-grayish-cyan);
+    font-size: 0.75em;
+}
+
+.input-title {
+    color: var(--dark-grayish-cyan);
+}
+
+.calculation-text {
+    color: var(--strong-cyan);
+    font-size: 2em;
+}
+
+.input-field {
+    font-size: 24px;
+}
