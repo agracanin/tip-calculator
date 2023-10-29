@@ -14,7 +14,7 @@
     <div class="input-container">
       <div class="bill section">
         <span class="input-title">Bill</span>
-        <input type="text" class="input-field" id="bill-price" />
+        <input type="text" class="input-field bill-input" id="bill-price" />
       </div>
 
       <div class="tip section">
@@ -22,16 +22,16 @@
         <div class="tip-selectors">
           <div class="tip-selector" data-tip="5">5%</div>
           <div class="tip-selector" data-tip="10">10%</div>
-          <div class="tip-selector" data-tip="15">15%</div>
+          <div class="tip-selector active" data-tip="15">15%</div>
           <div class="tip-selector" data-tip="25">25%</div>
           <div class="tip-selector" data-tip="50">50%</div>
-          <div class="tip-selector custom">Custom</div>
+          <input class="tip-selector custom" type="number" placeholder="Custom">
         </div>
       </div>
 
       <div class="people section">
         <span class="input-title">Number of People</span>
-        <input type="text" class="input-field" id="bill-price">
+        <input type="number" class="input-field people-input" id="bill-price">
       </div>
     </div>
 
