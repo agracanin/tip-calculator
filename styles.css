@@ -12,14 +12,23 @@
     --white: hsl(0, 0%, 100%);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center 15%;
     font-family: 'Space Mono', monospace;
     height: 100vh;
     width: 100vw;
@@ -70,6 +79,16 @@ body {
     color: var(--white);
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
+}
+
+.tip-selector:hover,
+.reset-btn:hover {
+    background-color: var(--light-grayish-cyan);
+}
+
+.tip-selector:hover {
+    color: var(--very-dark-cyan);
 }
 
 .display-container {
@@ -95,7 +114,8 @@ body {
 .reset-btn {
     width: 260px;
     align-self: center;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
+    font-size: 18px;
     background-color: var(--strong-cyan);
     outline: none;
     border: none;
@@ -124,6 +144,54 @@ body {
     font-size: 2em;
 }
 
+.bill-input {
+    background: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.people-input {
+    background: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
 .input-field {
     font-size: 24px;
+    background-color: hsl(186, 14%, 95%);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    padding: 0.25em;
+    padding-right: 0.5em;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--very-dark-cyan);
+}
+
+.input-field:focus {
+    outline: var(--strong-cyan) auto 2px
+}
+
+.error {
+    outline: red auto 2px
+}
+
+.custom {
+    background-color: hsl(186, 14%, 95%);
+    color: var(--very-dark-cyan);
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+.custom:hover {
+    cursor: auto;
+    background-color: hsl(186, 14%, 95%);
+}
+
+.active {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
 }
