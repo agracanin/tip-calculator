@@ -101,8 +101,9 @@ body {
 
 .calculation-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 2em;
 }
 
 .top-display {
@@ -191,7 +192,15 @@ body {
     background-color: hsl(186, 14%, 95%);
 }
 
+.custom:focus {
+    outline: var(--strong-cyan) auto 2px;
+}
+
 .active {
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
+}
+
+.input-active {
+    outline: var(--strong-cyan) auto 2px;
 }

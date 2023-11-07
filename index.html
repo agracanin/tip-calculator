@@ -20,18 +20,20 @@
       <div class="tip section">
         <span class="input-title">Select Tip %</span>
         <div class="tip-selectors">
-          <div class="tip-selector" data-tip="5">5%</div>
-          <div class="tip-selector" data-tip="10">10%</div>
-          <div class="tip-selector active" data-tip="15">15%</div>
-          <div class="tip-selector" data-tip="25">25%</div>
-          <div class="tip-selector" data-tip="50">50%</div>
-          <input class="tip-selector custom" type="number" placeholder="Custom">
+          <div class="tip-selector" id="tip-selector" data-tip="5">5%</div>
+          <div class="tip-selector" id="tip-selector" data-tip="10">10%</div>
+          <div class="tip-selector" id="tip-selector" data-tip="15">15%</div>
+          <div class="tip-selector" id="tip-selector" data-tip="25">25%</div>
+          <div class="tip-selector" id="tip-selector" data-tip="50">50%</div>
+          <input class="tip-selector custom" id="custom-tip" type="number" placeholder="Custom"
+            onkeydown="if(event.key==='.'){event.preventDefault();}">
         </div>
       </div>
 
       <div class="people section">
         <span class="input-title">Number of People</span>
-        <input type="number" class="input-field people-input" id="people">
+        <input type="number" class="input-field people-input" id="people"
+          onkeydown="if(event.key==='.'){event.preventDefault();}">
       </div>
     </div>
 
@@ -42,7 +44,7 @@
             <p class="calculation-title">Tip Amount</p>
             <span class="calculation-subtitle">/ person</span>
           </div>
-          <h2 class="calculation-text" id="tip-amount">$4.27</h2>
+          <h2 class="calculation-text" id="tip-amount">$0.00</h2>
         </div>
 
         <div class="calculation-container">
@@ -50,7 +52,7 @@
             <p class="calculation-title">Total</p>
             <span class="calculation-subtitle">/ person</span>
           </div>
-          <h2 class="calculation-text" id="total-amount">$32.79</h2>
+          <h2 class="calculation-text" id="total-amount">$0.00</h2>
         </div>
       </div>
       <button class="reset-btn" id="reset">RESET</button>
