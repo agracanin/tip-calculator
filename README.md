@@ -9,4 +9,4 @@ design files.
 - Reset functionality
 
 ## Demo
-https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
+![Demo](/images/demo.png)
